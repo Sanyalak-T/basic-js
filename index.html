@@ -8,17 +8,25 @@
     <title>Expanding Card</title>
 </head>
 <body>
-    <div class="container">
-        <div class="panel active" style="background-image: url('./images/vision.jpg');">
-            <h3>image-1</h3> 
-        </div>
-        <div class="panel " style="background-image: url('./images/mission.jpg')">
-            <h3>image-2</h3> 
-        </div>
-        <div class="panel " style="background-image: url('./images//priciple.jpg')">
-            <h3>image-3</h3>
-        </div>
-        <script src="script.js"></script>
+    <!-- <p>Player 1: Chris</p> -->
+    <!-- <button>Click me</button> -->
+
+    <h1>Number guessing game</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
